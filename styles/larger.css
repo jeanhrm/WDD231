@@ -1,10 +1,23 @@
 @media (min-width: 32.5rem) {
-  body {
-    max-width: 1000px;
-    margin: 0 auto;
+  #menu { display: none; }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0.75rem;
   }
 
   main {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  .course-cards {
     grid-template-columns: 1fr 1fr;
   }
 }

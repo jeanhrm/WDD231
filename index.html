@@ -7,35 +7,77 @@
   <meta name="description" content="WDD231 course home page.">
   <meta name="author" content="Jean C Ordoñez">
 
+  <!-- Google Font (one family) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
+  <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
+
 <body>
   <header>
-    <h1>WDD231</h1>
-    <p>Course Home Page from JC</p>
+    <div class="brand">
+      <img src="images/logo.svg" alt="Site logo" width="40" height="40">
+      <span class="name">Jean C Ordoñez</span>
+      <button id="menu" aria-label="Open menu" aria-expanded="false"></button>
+    </div>
+
+    <nav class="navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="chamber/index.html">Chamber</a>
+      <a href="final/index.html">Final</a>
+    </nav>
   </header>
 
   <main>
+    <h1>Home</h1>
+
     <section>
-      <h2>Welcome</h2>
-      <p>This is my WDD231 repository homepage.</p>
+      <h2>About</h2>
+      <p>This is my WDD231 course home page. I will add weekly work links and projects here.</p>
     </section>
 
     <section>
-      <h2>Quick Links</h2>  
+      <h2>Resources</h2>
       <ul>
-        <li><a href="#">Week 01</a></li>
-        <li><a href="#">Week 02</a></li>
-        <li><a href="#">Week 03</a></li>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://web.dev/" target="_blank" rel="noopener">web.dev</a></li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Courses</h2>
+
+      <div class="filters">
+        <button id="all" class="filter active">All</button>
+        <button id="wdd" class="filter">WDD</button>
+        <button id="cse" class="filter">CSE</button>
+      </div>
+
+      <div id="courseCards" class="course-cards"></div>
+
+      <p class="credits">Total Credits: <span id="totalCredits"></span></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> | Jean C Ordoñez | Peru</p>
+    <div class="social">
+      <a href="https://github.com/jeanhrm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/jeanc-ordoniez/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">Other</a>
+    </div>
+
+    <div class="footer-info">
+      <p>&copy; <span id="year"></span> Jean C Ordoñez | Peru</p>
+    </div>
+
     <p id="lastModified"></p>
   </footer>
 </body>
