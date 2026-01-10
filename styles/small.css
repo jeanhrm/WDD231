@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header, main, footer {
+  padding: 1rem;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+section {
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+}
