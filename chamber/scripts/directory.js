@@ -3,7 +3,7 @@ const gridBtn = document.querySelector("#grid");
 const listBtn = document.querySelector("#list");
 
 async function getMembers() {
-  const res = await fetch("data/members.json");
+  const res = await fetch("./data/members.json");
   if (!res.ok) throw new Error("Failed to load members.json");
   return await res.json();
 }
