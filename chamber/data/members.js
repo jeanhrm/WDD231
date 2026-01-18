@@ -4,7 +4,7 @@
     "address": "Jr. Sol 145, Huancavelica, Peru",
     "phone": "+51 912 111 111",
     "website": "https://andeanglow.com",
-    "image": "member-andean-glow.webp",
+    "image": "member-andean-glow.jpg",
     "membershipLevel": 3,
     "industry": "Textiles & Crafts"
   },
@@ -22,7 +22,7 @@
     "address": "Jr. Cultura 88, Huancavelica, Peru",
     "phone": "+51 914 333 333",
     "website": "https://qhapaqcoffee.org",
-    "image": "member-qhapaq-coffee.webp",
+    "image": "member-qhapaq-coffee.jpg",
     "membershipLevel": 1,
     "industry": "Hospitality"
   },
@@ -40,7 +40,7 @@
     "address": "Av. Integracion 310, Huancavelica, Peru",
     "phone": "+51 916 555 555",
     "website": "https://altiplanologistics.com",
-    "image": "member-altiplano-logistics.webp",
+    "image": "member-altiplano-logistics.jpg",
     "membershipLevel": 3,
     "industry": "Logistics"
   },
@@ -49,7 +49,7 @@
     "address": "Jr. Salud 60, Huancavelica, Peru",
     "phone": "+51 917 666 666",
     "website": "https://killahealth.com",
-    "image": "member-killa-health.webp",
+    "image": "member-killa-health.jpg",
     "membershipLevel": 1,
     "industry": "Health Services"
   },
