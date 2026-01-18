@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huancavelica Chamber of Commerce | Directory</title>
+  <meta name="description" content="Explore member businesses of the Huancavelica Chamber of Commerce. Browse in grid or list view to find local services and partners." />
+  <meta name="author" content="Jean C Ordoñez" />
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <meta property="og:title" content="Huancavelica Chamber of Commerce | Directory" />
+  <meta property="og:description" content="Explore member businesses of the Huancavelica Chamber of Commerce. Browse in grid or list view." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jeanhrm.github.io/wdd231/chamber/images/og-directory.jpg" />
+  <meta property="og:url" content="https://jeanhrm.github.io/wdd231/chamber/directory.html" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="Huancavelica Chamber Home">
+        <img src="images/logo.png" alt="Huancavelica Chamber of Commerce" width="44" height="44" />
+      </a>
+      <div class="brand-text">
+        <p class="brand-name">Huancavelica Chamber</p>
+        <p class="brand-tagline">Commerce • Tourism • Growth</p>
+      </div>
+    </div>
+
+    <button id="menu" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a class="active" href="directory.html" aria-current="page">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="page-head">
+      <h1>Business Directory</h1>
+      <p class="lead">Browse member businesses of the Huancavelica Chamber of Commerce.</p>
+
+      <div class="view-controls" role="group" aria-label="Directory view controls">
+        <button id="grid" class="control-btn is-active" type="button">Grid</button>
+        <button id="list" class="control-btn" type="button">List</button>
+      </div>
+    </section>
+
+    <section class="directory">
+      <div id="members" class="members grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Huancavelica Chamber of Commerce</p>
+        <p>Huancavelica, Peru</p>
+        <p>Phone: +51 999 999 999</p>
+        <p>Email: info@huancavelicachamber.org</p>
+      </div>
+
+      <div>
+        <p>© <span id="year"></span> Huancavelica Chamber</p>
+        <p>Jean C Ordoñez • WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
