@@ -6,8 +6,8 @@ const tempEl = document.querySelector("#current-temp");
 const descEl = document.querySelector("#weather-desc");
 const forecastEl = document.querySelector("#forecast");
 
-const urlCurrent = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
-const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+const urlCurrent = `https://api.openweathermap.org/data/3.0/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+const urlForecast = `https://api.openweathermap.org/data/3.0/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
 function toTitleCase(str) {
   return str.split(" ").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
