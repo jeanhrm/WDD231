@@ -9,6 +9,45 @@
 
 * { box-sizing: border-box; }
 
+.home { padding: 1rem; display: grid; gap: 1rem; }
+
+.hero { position: relative; border-radius: 16px; overflow: hidden; }
+.hero img { width: 100%; height: auto; display: block; }
+
+.hero-content {
+  position: absolute;
+  inset: auto 1rem 1rem 1rem;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 14px;
+  max-width: 36rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .75rem 1rem;
+  background: #1f6feb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+}
+
+.home-grid { display: grid; gap: 1rem; }
+
+.spotlight-cards { display: grid; gap: 1rem; }
+.spotlight-card img { max-width: 90px; height: auto; }
+
+
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -183,3 +222,9 @@ img { max-width: 100%; height: auto; display: block; }
 
 .footer-title { margin: 0 0 0.25rem; font-weight: 700; }
 .site-footer p { margin: 0.2rem 0; }
+
+.spotlight-cards { display: grid; gap: 1rem; }
+.spotlight-card { padding: 1rem; border-radius: 16px; }
+.spotlight-card img { display: block; margin: .5rem 0; border-radius: 12px; max-width: 120px; height: auto; }
+.muted { opacity: .8; margin: 0 0 .5rem 0; }
+

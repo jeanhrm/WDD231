@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huancavelica Chamber of Commerce | Home</title>
+  <meta name="description" content="Huancavelica Chamber of Commerce home page: events, local business spotlights, and current weather." />
+  <meta name="author" content="Jean C Ordoñez" />
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <meta property="og:title" content="Huancavelica Chamber of Commerce | Home" />
+  <meta property="og:description" content="Events, weather, and member spotlights from the Huancavelica Chamber of Commerce." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jeanhrm.github.io/WDD231/chamber/images/og-home.jpg" />
+  <meta property="og:url" content="https://jeanhrm.github.io/WDD231/chamber/index.html" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="Huancavelica Chamber Home">
+        <img src="images/logo.png" alt="Huancavelica Chamber of Commerce" width="44" height="44" />
+      </a>
+      <div class="brand-text">
+        <p class="brand-name">Huancavelica Chamber</p>
+        <p class="brand-tagline">Commerce • Tourism • Growth</p>
+      </div>
+    </div>
+
+    <button id="menu" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+      <a class="active" href="index.html" aria-current="page">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main class="main home">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero section">
+      <picture>
+        <source srcset="images/hero.webp" type="image/webp" />
+        <img src="images/hero.jpg" alt="Huancavelica city and Andean landscape" loading="lazy" />
+      </picture>
+
+      <div class="hero-content">
+        <h1>Grow with Huancavelica</h1>
+        <p class="lead">Connect with local businesses, tourism partners, and opportunities to strengthen our region.</p>
+        <a class="cta-btn" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- HOME GRID (Events + Weather) -->
+    <section class="home-grid" aria-label="Home content">
+      <!-- EVENTS -->
+      <section class="card events">
+        <h2>Current Events</h2>
+        <ul class="events-list">
+          <li><strong>Business Networking:</strong> Friday • 6:00 PM • Main Plaza</li>
+          <li><strong>Tourism Expo:</strong> Saturday • 10:00 AM • Cultural Center</li>
+          <li><strong>Training Workshop:</strong> Tuesday • 3:00 PM • Chamber Hall</li>
+        </ul>
+      </section>
+
+      <!-- WEATHER -->
+      <section class="card weather">
+        <h2>Weather</h2>
+
+        <div class="weather-now">
+          <p class="temp">
+            <span id="current-temp">--</span><span aria-hidden="true">°F</span>
+          </p>
+          <p id="weather-desc">Loading...</p>
+        </div>
+
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast" class="forecast" aria-live="polite"></ul>
+      </section>
+    </section>
+
+    <!-- SPOTLIGHTS -->
+    <section class="card spotlights" aria-label="Member spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-cards" class="spotlight-cards" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Huancavelica Chamber of Commerce</p>
+        <p>Huancavelica, Peru</p>
+        <p>Phone: +51 999 999 999</p>
+        <p>Email: info@huancavelicachamber.org</p>
+      </div>
+
+      <div>
+        <p>© <span id="year"></span> Huancavelica Chamber</p>
+        <p>Jean C Ordoñez • WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
