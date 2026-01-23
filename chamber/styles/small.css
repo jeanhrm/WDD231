@@ -1,230 +1,243 @@
-:root {
-  --primary: #1f4e79;
-  --secondary: #c9a227;
-  --bg: #f5f5f5;
-  --text: #222;
-  --card: #fff;
-  --border: rgba(0,0,0,.12);
+/* =========================
+   VARIABLES (PALETA ANDEANA)
+========================= */
+:root{
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+
+  /* Colores inspirados en la imagen */
+  --primary: #1e5aa8;      /* azul cielo andino */
+  --primary-2: #0b3a75;    /* azul profundo */
+  --accent: #b6403a;       /* terracota iglesia */
+
+  --border: rgba(15, 23, 42, 0.10);
+  --shadow: 0 10px 26px rgba(2, 6, 23, 0.10);
 }
 
-* { box-sizing: border-box; }
-
-.home { padding: 1rem; display: grid; gap: 1rem; }
-
-.hero { position: relative; border-radius: 16px; overflow: hidden; }
-.hero img { width: 100%; height: auto; display: block; }
-
-.hero-content {
-  position: absolute;
-  inset: auto 1rem 1rem 1rem;
-  background: rgba(0,0,0,.55);
-  color: #fff;
-  padding: 1rem;
-  border-radius: 14px;
-  max-width: 36rem;
+/* =========================
+   RESET / BASE
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.cta-btn {
-  display: inline-block;
-  margin-top: .5rem;
-  padding: .75rem 1rem;
-  background: #1f6feb;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 12px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 1rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,.08);
-}
-
-.home-grid { display: grid; gap: 1rem; }
-
-.spotlight-cards { display: grid; gap: 1rem; }
-.spotlight-card img { max-width: 90px; height: auto; }
-
-
-
-body {
+body{
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
   background: var(--bg);
   color: var(--text);
+  line-height: 1.6;
 }
 
-img { max-width: 100%; height: auto; display: block; }
-
-.site-header {
-  background: var(--card);
-  border-bottom: 1px solid var(--border);
-  padding: 0.75rem 1rem;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0.75rem;
-  align-items: center;
-}
-
-.brand { display: flex; gap: 0.75rem; align-items: center; }
-.brand-name { margin: 0; font-weight: 700; }
-.brand-tagline { margin: 0; font-size: 0.9rem; opacity: 0.85; }
-
-.menu-button {
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--border);
-  background: var(--card);
-  border-radius: 0.6rem;
-}
-
-.menu-icon {
-  width: 22px;
-  height: 2px;
-  background: var(--primary);
+img{
+  max-width: 100%;
+  height: auto;
   display: block;
-  margin: 0 auto;
-  position: relative;
 }
-.menu-icon::before,
-.menu-icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 22px;
-  height: 2px;
-  background: var(--primary);
-}
-.menu-icon::before { top: -7px; }
-.menu-icon::after { top: 7px; }
 
-.nav {
-  grid-column: 1 / -1;
+/* =========================
+   HEADER / NAV
+========================= */
+.site-header{
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: .75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.brand-name{
+  font-weight: 700;
+  color: var(--primary-2);
+  margin: 0;
+}
+
+.brand-tagline{
+  margin: 0;
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.nav{
   display: none;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: .5rem;
+  margin-top: .75rem;
 }
 
-.nav.open { display: flex; }
-
-.nav a {
-  padding: 0.7rem 0.8rem;
-  border-radius: 0.6rem;
+.nav a{
   text-decoration: none;
-  color: var(--text);
+  padding: .4rem .75rem;
+  border-radius: 999px;
+  color: var(--primary-2);
+  font-weight: 500;
 }
 
-.nav a.active,
-.nav a:hover {
-  background: rgba(31, 78, 121, 0.12);
-  color: var(--primary);
+.nav a:hover{
+  color: var(--accent);
 }
 
-.main { padding: 1rem; max-width: 1100px; margin: 0 auto; }
-
-.page-head { display: grid; gap: 0.5rem; margin: 0 0 1rem; }
-.page-head h1 { margin: 0; }
-.lead { margin: 0; opacity: 0.9; }
-
-.view-controls {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+.nav a.active{
+  background: rgba(30, 90, 168, 0.12);
+  border: 1px solid rgba(30, 90, 168, 0.25);
 }
 
-.control-btn {
-  border: 1px solid var(--border);
-  background: var(--card);
-  padding: 0.6rem 0.9rem;
-  border-radius: 0.6rem;
+/* menú hamburguesa */
+.menu-button{
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
-.control-btn.is-active {
-  border-color: rgba(31, 78, 121, 0.35);
-  background: rgba(31, 78, 121, 0.12);
-  color: var(--primary);
-}
-
-.members.grid {
+/* =========================
+   MAIN
+========================= */
+.main{
+  padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.member {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 0.9rem;
+/* =========================
+   HERO
+========================= */
+.hero{
+  position: relative;
+  border-radius: 18px;
   overflow: hidden;
+  border: 1px solid var(--border);
 }
 
-.member h2 {
-  margin: 0.8rem 0.9rem 0.3rem;
-  font-size: 1.1rem;
+.hero-content{
+  position: absolute;
+  inset: auto 1rem 1rem 1rem;
+  padding: 1rem;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 58, 117, 0.75),
+    rgba(11, 58, 117, 0.35)
+  );
+  border-radius: 14px;
+  backdrop-filter: blur(2px);
 }
 
-.member-meta {
-  padding: 0 0.9rem 0.9rem;
-  display: grid;
-  gap: 0.35rem;
+.hero-content h1{
+  margin: 0 0 .25rem 0;
+  font-size: 1.4rem;
 }
 
-.member-meta a { color: var(--primary); }
+.hero-content p{
+  margin: 0 0 .5rem 0;
+  font-size: .95rem;
+}
 
-.badge {
+.cta-btn{
   display: inline-block;
-  width: fit-content;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  background: rgba(201, 162, 39, 0.18);
-  border: 1px solid rgba(201, 162, 39, 0.35);
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  padding: .6rem 1rem;
+  border-radius: 14px;
   font-weight: 600;
+  transition: background .15s ease, transform .15s ease;
 }
 
-.members.list {
-  display: grid;
-  gap: 0.75rem;
+.cta-btn:hover{
+  background: var(--accent);
+  transform: translateY(-1px);
 }
 
-.members.list .member {
-  display: grid;
-  grid-template-columns: 92px 1fr;
-  gap: 0.75rem;
-  align-items: start;
-  padding: 0.75rem;
-}
-
-.members.list .member img {
-  border-radius: 0.75rem;
-  width: 92px;
-  height: 92px;
-  object-fit: cover;
-}
-
-.members.list .member h2 { margin: 0; }
-.members.list .member-meta { padding: 0; }
-
-.site-footer {
-  margin-top: 2rem;
-  background: var(--card);
-  border-top: 1px solid var(--border);
+/* =========================
+   CARDS
+========================= */
+.card{
+  background: var(--surface);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
   padding: 1rem;
 }
 
-.footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
+.card h2{
+  margin-top: 0;
+  color: var(--primary-2);
+}
+
+.card h2::after{
+  content:"";
+  display:block;
+  width: 48px;
+  height: 3px;
+  margin-top: .3rem;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+/* =========================
+   EVENTS
+========================= */
+.events ul{
+  padding-left: 1.1rem;
+  margin: .5rem 0 0 0;
+}
+
+/* =========================
+   WEATHER
+========================= */
+.weather .temp{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.forecast{
+  list-style: none;
+  padding: 0;
+  margin: .5rem 0 0 0;
+}
+
+.forecast li{
+  padding: .25rem 0;
+  color: var(--muted);
+}
+
+/* =========================
+   SPOTLIGHTS
+========================= */
+.spotlight-cards{
   display: grid;
   gap: 1rem;
 }
 
-.footer-title { margin: 0 0 0.25rem; font-weight: 700; }
-.site-footer p { margin: 0.2rem 0; }
+.spotlight-card img{
+  max-width: 120px;
+  border-radius: 12px;
+}
 
-.spotlight-cards { display: grid; gap: 1rem; }
-.spotlight-card { padding: 1rem; border-radius: 16px; }
-.spotlight-card img { display: block; margin: .5rem 0; border-radius: 12px; max-width: 120px; height: auto; }
-.muted { opacity: .8; margin: 0 0 .5rem 0; }
+/* =========================
+   FOOTER
+========================= */
+.site-footer{
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
 
+.footer-inner{
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  font-size: .9rem;
+}
