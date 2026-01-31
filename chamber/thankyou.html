@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huancavelica Chamber of Commerce | Thank You</title>
+  <meta name="description" content="Thank you for joining the Huancavelica Chamber of Commerce." />
+  <meta name="author" content="Jean C Ordoñez" />
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="Huancavelica Chamber Home">
+        <img src="images/logo.png" alt="Huancavelica Chamber of Commerce" width="44" height="44" />
+      </a>
+      <div class="brand-text">
+        <p class="brand-name">Huancavelica Chamber</p>
+        <p class="brand-tagline">Commerce • Tourism • Growth</p>
+      </div>
+    </div>
+
+    <button id="menu" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main class="main thankyou">
+    <section class="card">
+      <h1>Thank You!</h1>
+      <p class="lead">We appreciate your interest in joining the Huancavelica Chamber of Commerce.</p>
+
+      <h2>Your Submitted Information</h2>
+      <div class="submitted" id="submitted" aria-live="polite"></div>
+
+      <p>
+        <a class="cta-btn" href="index.html">Back to Home</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Huancavelica Chamber of Commerce</p>
+        <p>Huancavelica, Peru</p>
+        <p>Phone: +51 999 999 999</p>
+        <p>Email: info@huancavelicachamber.org</p>
+      </div>
+
+      <div>
+        <p>© <span id="year"></span> Huancavelica Chamber</p>
+        <p>Jean C Ordoñez • WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
