@@ -45,3 +45,10 @@
     align-items: start;
   }
 }
+
+@media (min-width: 900px) {
+  .join-layout {
+    grid-template-columns: 1.3fr 0.9fr; /* form left, cards right */
+    align-items: start;
+  }
+}

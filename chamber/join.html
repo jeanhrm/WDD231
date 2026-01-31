@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huancavelica Chamber of Commerce | Join</title>
+  <meta name="description" content="Join the Huancavelica Chamber of Commerce. Membership application form and membership benefits." />
+  <meta name="author" content="Jean C Ordoñez" />
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="Huancavelica Chamber Home">
+        <img src="images/logo.png" alt="Huancavelica Chamber of Commerce" width="44" height="44" />
+      </a>
+      <div class="brand-text">
+        <p class="brand-name">Huancavelica Chamber</p>
+        <p class="brand-tagline">Commerce • Tourism • Growth</p>
+      </div>
+    </div>
+
+    <button id="menu" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a class="active" href="join.html" aria-current="page">Join</a>
+    </nav>
+  </header>
+
+  <main class="main join">
+    <h1 class="page-title">Join the Chamber</h1>
+    <p class="lead">Apply for membership and choose the plan that fits your organization.</p>
+
+    <div class="join-layout">
+      <!-- FORM -->
+      <section class="card form-card" aria-label="Membership application form">
+        <h2>Membership Application</h2>
+
+        <form class="join-form" method="get" action="thankyou.html">
+          <label>
+            First Name *
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              required
+              title="Enter your first name"
+              autocomplete="given-name"
+            />
+          </label>
+
+          <label>
+            Last Name *
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              required
+              title="Enter your last name"
+              autocomplete="family-name"
+            />
+          </label>
+
+          <label>
+            Organizational Title
+            <input
+              type="text"
+              name="orgtitle"
+              id="orgtitle"
+              title="Only letters, spaces, and hyphens. Minimum 7 characters."
+              autocomplete="organization-title"
+              pattern="^[A-Za-z\s-]{7,}$"
+              placeholder="e.g., Community Outreach Lead"
+            />
+          </label>
+
+          <label>
+            Email *
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              title="Enter a valid email address"
+              autocomplete="email"
+              placeholder="name@example.com"
+            />
+          </label>
+
+          <label>
+            Mobile Phone *
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              title="Enter your mobile phone number"
+              autocomplete="tel"
+            />
+          </label>
+
+          <label>
+            Business / Organization Name *
+            <input
+              type="text"
+              name="org"
+              id="org"
+              required
+              title="Enter your organization name"
+              autocomplete="organization"
+            />
+          </label>
+
+          <label>
+            Membership Level *
+            <select name="membership" id="membership" required title="Select a membership level">
+              <option value="" selected disabled>Select a level</option>
+              <option value="np">NP Membership (No fee)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>
+            Business / Organization Description
+            <textarea
+              name="description"
+              id="description"
+              title="Describe your organization"
+              rows="4"
+              placeholder="What does your organization do?"
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp" />
+
+          <button class="cta-btn" type="submit">Submit Application</button>
+        </form>
+      </section>
+
+      <aside class="membership-cards" aria-label="Membership level benefits">
+        <h2>Membership Levels</h2>
+
+        <article class="mcard anim-card">
+          <h3>NP Membership</h3>
+          <p>For non-profit organizations. No fee.</p>
+          <button class="link-btn" type="button" data-modal="modal-np">View benefits</button>
+        </article>
+
+        <article class="mcard anim-card">
+          <h3>Bronze Membership</h3>
+          <p>Entry-level business support.</p>
+          <button class="link-btn" type="button" data-modal="modal-bronze">View benefits</button>
+        </article>
+
+        <article class="mcard anim-card">
+          <h3>Silver Membership</h3>
+          <p>More visibility and discounts.</p>
+          <button class="link-btn" type="button" data-modal="modal-silver">View benefits</button>
+        </article>
+
+        <article class="mcard anim-card">
+          <h3>Gold Membership</h3>
+          <p>Maximum promotion and perks.</p>
+          <button class="link-btn" type="button" data-modal="modal-gold">View benefits</button>
+        </article>
+      </aside>
+    </div>
+
+    <dialog id="modal-np" class="modal">
+      <h3>NP Membership Benefits</h3>
+      <ul>
+        <li>No membership fee</li>
+        <li>Access to community events</li>
+        <li>Basic training sessions</li>
+      </ul>
+      <button class="cta-btn" type="button" data-close>Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze" class="modal">
+      <h3>Bronze Membership Benefits</h3>
+      <ul>
+        <li>Member directory listing</li>
+        <li>Invitations to networking events</li>
+        <li>Training discounts</li>
+      </ul>
+      <button class="cta-btn" type="button" data-close>Close</button>
+    </dialog>
+
+    <dialog id="modal-silver" class="modal">
+      <h3>Silver Membership Benefits</h3>
+      <ul>
+        <li>Everything in Bronze</li>
+        <li>Featured promotion 1x per quarter</li>
+        <li>Event discounts</li>
+      </ul>
+      <button class="cta-btn" type="button" data-close>Close</button>
+    </dialog>
+
+    <dialog id="modal-gold" class="modal">
+      <h3>Gold Membership Benefits</h3>
+      <ul>
+        <li>Everything in Silver</li>
+        <li>Homepage spotlight opportunities</li>
+        <li>Priority advertising & partner promotions</li>
+        <li>Special VIP events</li>
+      </ul>
+      <button class="cta-btn" type="button" data-close>Close</button>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Huancavelica Chamber of Commerce</p>
+        <p>Huancavelica, Peru</p>
+        <p>Pho

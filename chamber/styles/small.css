@@ -1,24 +1,18 @@
-/* =========================
-   VARIABLES (PALETA ANDEANA)
-========================= */
 :root{
   --bg: #f4f6f8;
   --surface: #ffffff;
   --text: #0f172a;
   --muted: #475569;
 
-  /* Colores inspirados en la imagen */
-  --primary: #1e5aa8;      /* azul cielo andino */
-  --primary-2: #0b3a75;    /* azul profundo */
-  --accent: #b6403a;       /* terracota iglesia */
+
+  --primary: #1e5aa8;  
+  --primary-2: #0b3a75;
+  --accent: #b6403a;
 
   --border: rgba(15, 23, 42, 0.10);
   --shadow: 0 10px 26px rgba(2, 6, 23, 0.10);
 }
 
-/* =========================
-   RESET / BASE
-========================= */
 *,
 *::before,
 *::after {
@@ -39,9 +33,7 @@ img{
   display: block;
 }
 
-/* =========================
-   HEADER / NAV
-========================= */
+
 .site-header{
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -100,18 +92,13 @@ img{
   cursor: pointer;
 }
 
-/* =========================
-   MAIN
-========================= */
 .main{
   padding: 1rem;
   display: grid;
   gap: 1.5rem;
 }
 
-/* =========================
-   HERO
-========================= */
+
 .hero{
   position: relative;
   border-radius: 18px;
@@ -159,9 +146,7 @@ img{
   transform: translateY(-1px);
 }
 
-/* =========================
-   CARDS
-========================= */
+
 .card{
   background: var(--surface);
   border-radius: 18px;
@@ -185,17 +170,13 @@ img{
   border-radius: 999px;
 }
 
-/* =========================
-   EVENTS
-========================= */
+
 .events ul{
   padding-left: 1.1rem;
   margin: .5rem 0 0 0;
 }
 
-/* =========================
-   WEATHER
-========================= */
+
 .weather .temp{
   font-size: 2rem;
   font-weight: 700;
@@ -213,9 +194,6 @@ img{
   color: var(--muted);
 }
 
-/* =========================
-   SPOTLIGHTS
-========================= */
 .spotlight-cards{
   display: grid;
   gap: 1rem;
@@ -226,9 +204,7 @@ img{
   border-radius: 12px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+
 .site-footer{
   background: var(--surface);
   border-top: 1px solid var(--border);
@@ -240,4 +216,95 @@ img{
   display: grid;
   gap: 1rem;
   font-size: .9rem;
+}
+
+/* --------------------JOIN PAGE--------------------- */
+.join-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.page-title { margin-top: 0.5rem; }
+
+.join-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.join-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 0.6rem;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+.membership-cards {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.mcard {
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.link-btn {
+  border: 0;
+  background: none;
+  color: inherit;
+  text-decoration: underline;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+.modal {
+  border: 0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  max-width: 520px;
+  width: 90%;
+}
+
+.modal::backdrop {
+  background: rgba(0,0,0,.6);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .anim-card {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: cardIn 700ms ease-out forwards;
+  }
+  .anim-card:nth-child(2) { animation-delay: 80ms; }
+  .anim-card:nth-child(3) { animation-delay: 160ms; }
+  .anim-card:nth-child(4) { animation-delay: 240ms; }
+  .anim-card:nth-child(5) { animation-delay: 320ms; }
+}
+
+@keyframes cardIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.submitted-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.submitted-list li {
+  margin: 0.35rem 0;
 }
