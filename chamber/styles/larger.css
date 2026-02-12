@@ -52,3 +52,15 @@
     align-items: start;
   }
 }
+
+
+@media (min-width: 900px) {
+  .discover-layout {
+    grid-template-columns: 0.9fr 1.4fr;
+    align-items: start;
+  }
+
+  .members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

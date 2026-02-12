@@ -308,3 +308,33 @@ img{
 .submitted-list li {
   margin: 0.35rem 0;
 }
+
+.discover-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.facts {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.discover-gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.place figure {
+  margin: 0.75rem 0;
+}
+
+.place img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}

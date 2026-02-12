@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huancavelica Chamber of Commerce | Discover</title>
+  <meta name="description" content="Discover Huancavelica: culture, nature, and places to visit." />
+  <meta name="author" content="Jean C Ordoñez" />
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <meta property="og:title" content="Huancavelica Chamber of Commerce | Discover" />
+  <meta property="og:description" content="Explore culture, nature, and key attractions in Huancavelica, Peru." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jeanhrm.github.io/wdd231/chamber/images/og-discover.jpg" />
+  <meta property="og:url" content="https://jeanhrm.github.io/wdd231/chamber/discover.html" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="Huancavelica Chamber Home">
+        <img src="images/logo.png" alt="Huancavelica Chamber of Commerce" width="44" height="44" />
+      </a>
+      <div class="brand-text">
+        <p class="brand-name">Huancavelica Chamber</p>
+        <p class="brand-tagline">Commerce • Tourism • Growth</p>
+      </div>
+    </div>
+
+    <button id="menu" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="discover.html" aria-current="page">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main class="main discover">
+    <h1 class="page-title">Discover Huancavelica</h1>
+    <p class="lead">A highland region in Peru known for Andean culture, stunning landscapes, and living traditions.</p>
+
+    <section class="visit-message card" aria-label="Visit message">
+      <h2>Your Visits</h2>
+      <p id="visitMessage">Loading your visit info...</p>
+    </section>
+
+    <div class="discover-layout">
+      <aside class="sidebar">
+        <section class="card">
+          <h2>Quick Facts</h2>
+          <ul class="facts">
+            <li><strong>Region:</strong> Central Andes of Peru</li>
+            <li><strong>Altitude:</strong> High-elevation landscapes</li>
+            <li><strong>Highlights:</strong> Lagoons, mountains, festivals</li>
+            <li><strong>Best season:</strong> Dry season (clear skies)</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Travel Tips</h2>
+          <ul class="facts">
+            <li>Bring warm layers (cold nights).</li>
+            <li>Hydrate often (high altitude).</li>
+            <li>Use sunscreen (strong sun).</li>
+            <li>Plan transport in advance for rural routes.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Local Culture</h2>
+          <p>
+            Huancavelica blends Andean heritage, traditional textiles, music, and community celebrations.
+            Visitors can experience local markets and regional dishes while supporting local producers.
+          </p>
+        </section>
+      </aside>
+
+      <section class="discover-gallery" aria-label="Featured places">
+        <article class="card place">
+          <h2>Historic City Center</h2>
+          <figure>
+            <img src="images/discover-city.jpg" alt="Huancavelica city center and Andean streets" loading="lazy" width="900" height="520" />
+            <figcaption>Architecture, plazas, and local markets.</figcaption>
+          </figure>
+          <p>
+            Walk through the city center to explore the main plaza, local craft stands, and community life. It's a great way to
+            understand the region’s identity.
+          </p>
+        </article>
+
+        <article class="card place">
+          <h2>Andean Lagoons</h2>
+          <figure>
+            <img src="images/discover-lagoon.jpg" alt="A highland lagoon surrounded by mountains" loading="lazy" width="900" height="520" />
+            <figcaption>Perfect for photos, hiking, and nature.</figcaption>
+          </figure>
+          <p>
+            Highland lagoons offer calm waters and dramatic mountain views. Many routes are ideal for hiking and eco-tourism.
+          </p>
+        </article>
+
+        <article class="card place">
+          <h2>Mountain Viewpoints</h2>
+          <figure>
+            <img src="images/discover-mountains.jpg" alt="Mountain viewpoint in Huancavelica with clouds and valleys" loading="lazy" width="900" height="520" />
+            <figcaption>Scenic routes for trekking and exploration.</figcaption>
+          </figure>
+          <p>
+            The Andes around Huancavelica are known for scenic trails and viewpoints. Bring a jacket and take breaks to adapt to altitude.
+          </p>
+        </article>
+
+        <article class="card place">
+          <h2>Traditional Festivals</h2>
+          <figure>
+            <img src="images/discover-festival.jpg" alt="Traditional festival with dancers and colorful clothing" loading="lazy" width="900" height="520" />
+            <figcaption>Music, dance, and community traditions.</figcaption>
+          </figure>
+          <p>
+            Festivals are a living expression of local culture. They bring families together through dance, music, and traditional clothing.
+          </p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Huancavelica Chamber of Commerce</p>
+        <p>Huancavelica, Peru</p>
+        <p>Phone: +51 999 999 999</p>
+        <p>Em
