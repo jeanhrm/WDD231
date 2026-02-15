@@ -1,0 +1,55 @@
+h2{
+  font-family: "Poppins", system-ui, sans-serif;
+  color: var(--french);
+  margin: 0 0 .5rem;
+}
+h3{
+  font-family: "Poppins", system-ui, sans-serif;
+  color: var(--french);
+  margin: 0 0 .35rem;
+}
+
+/* Cards */
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 10px 22px var(--shadow);
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  padding: .6rem .95rem;
+  border-radius: 12px;
+  font-weight: 800;
+  border: 1px solid rgba(0,0,0,.10);
+  cursor:pointer;
+}
+
+.btn--primary{
+  background: var(--ocean);
+  color:#fff;
+}
+.btn--primary:hover{
+  filter: brightness(1.05);
+  text-decoration:none;
+}
+
+.btn--accent{
+  background: var(--khaki);
+  color:#fff;
+}
+.btn--accent:hover{
+  filter: brightness(1.05);
+  text-decoration:none;
+}
+
+/* Optional utility */
+.error{
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(194,65,12,.25);
+  padding: 1rem;
+  border-radius: var(--radius);
+}

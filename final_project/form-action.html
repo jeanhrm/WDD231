@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Submission | Discover Huancavelica</title>
+  <meta name="description" content="Trip planner submission results.">
+  <meta name="author" content="Jean Ordoñez">
+
+  <link rel="icon" href="images/icons/favicon.ico">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <h1 class="logo">Discover Huancavelica</h1>
+  </div>
+</header>
+
+<main class="container section">
+  <h2>Trip Plan Submitted</h2>
+  <p>Thank you for planning your visit! Here are your submitted details:</p>
+
+  <section id="results" class="card" style="margin-top:1rem;"></section>
+
+  <p style="margin-top:1.5rem;">
+    <a href="index.html" class="btn btn--accent">Return to Home</a>
+  </p>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Discover Huancavelica</p>
+  </div>
+</footer>
+
+<script>
+  // Set year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Read form data
+  const params = new URLSearchParams(window.location.search);
+
+  const name = params.get("name") || "Not provided";
+  const email = params.get("email") || "Not provided";
+  const days = params.get("days") || "Not specified";
+  const interests = params.getAll("interests");
+  const message = params.get("message") || "No message";
+
+  const interestsList = interests.length
+    ? interests.map(i => `<li>${i}</li>`).join("")
+    : "<li>No interests selected</li>";
+
+  const resultsSection = document.getElementById("results");
+
+  resultsSection.innerHTML = `
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Days visiting:</strong> ${days}</p>
+    <p><strong>Interests:</strong></p>
+    <ul>${interestsList}</ul>
+    <p><strong>Message:</strong> ${message}</p>
+  `;
+</script>
+
+</body>
+</html>

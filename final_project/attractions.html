@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attractions | Discover Huancavelica</title>
+  <meta name="description" content="Explore the main attractions of Huancavelica: lagoons, mountains, festivals, and heritage sites.">
+  <meta name="author" content="Jean Ordoñez">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Attractions | Discover Huancavelica">
+  <meta property="og:description" content="Discover Huancavelica’s top attractions: nature, culture, and heritage.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero/huancavelica-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/icons/favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <h1 class="logo">Discover Huancavelica</h1>
+
+    <button id="menuBtn"
+            class="menu-btn"
+            aria-label="Open navigation"
+            aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="primaryNav" class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html" aria-current="page">Attractions</a></li>
+        <li><a href="visit.html">Visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h2>Attractions</h2>
+  <p>
+    Explore Huancavelica’s most iconic places and cultural experiences. Use the filter to browse by category,
+    and open any item for details.
+  </p>
+
+  <!-- Filter + results count -->
+  <div class="filters" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;margin:1rem 0;">
+    <label for="filter-type"><strong>Filter:</strong></label>
+    <select id="filter-type" class="select" style="padding:.55rem .65rem;border-radius:12px;border:1px solid rgba(50,73,143,.25);">
+      <option value="all">All</option>
+      <option value="nature">Nature</option>
+      <option value="culture">Culture</option>
+      <option value="heritage">Heritage</option>
+    </select>
+
+    <p id="results-count" style="margin:0;color:rgba(84,71,57,.85);"></p>
+  </div>
+
+  <!-- Dynamic grid -->
+  <section id="attractions-grid" class="grid" style="display:grid;grid-template-columns:1fr;gap:1rem;"></section>
+</main>
+
+<!-- Modal (required by JS) -->
+<div id="modalOverlay" hidden class="overlay"></div>
+
+<section
+  id="modal"
+  class="modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+  aria-hidden="true"
+  hidden
+>
+  <div class="modal__inner">
+    <div class="modal__header">
+      <h2 id="modalTitle" style="margin:0;">Details</h2>
+      <button id="modalClose" type="button" aria-label="Close modal" class="btn btn--accent">Close</button>
+    </div>
+    <div id="modalBody" class="modal__body"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Discover Huancavelica</p>
+    <p>
+      <a href="attributions.html">Attributions</a> |
+      <a href="https://youtube.com" target="_blank">Project Demo Video</a>
+    </p>
+  </div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
