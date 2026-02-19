@@ -6,7 +6,7 @@
     "location": "Castrovirreyna Province, Huancavelica",
     "altitude_m": 4600,
     "best_season": "May – September",
-    "image": "images/attractions/choclococha.webp",
+    "image": "images/attractions/choclococha.jpg",
     "description": "A large high-altitude lagoon surrounded by wide Andean landscapes. It is an important water source and a great place to appreciate the puna ecosystem.",
     "tips": "Bring warm layers and wind protection; temperatures drop quickly."
   },
@@ -50,7 +50,7 @@
     "location": "Huaytará Province, Huancavelica",
     "altitude_m": 2650,
     "best_season": "All year",
-    "image": "images/attractions/huaytara.webp",
+    "image": "images/attractions/huaytara.jpg",
     "description": "A notable colonial church built on Inca foundations, often cited as one of the best examples of Andean colonial architecture in the region.",
     "tips": "If you like history, pair it with a visit to nearby Inca remains and viewpoints."
   },
@@ -61,7 +61,7 @@
     "location": "Yauli District, Huancavelica",
     "altitude_m": 3800,
     "best_season": "All year",
-    "image": "images/attractions/yauli-termales.webp",
+    "image": "images/attractions/yauli-termales.jpg",
     "description": "Thermal waters used locally for relaxation and wellness, surrounded by Andean scenery near the city area.",
     "tips": "Bring sandals and a towel; mornings are usually less crowded."
   },
@@ -72,7 +72,7 @@
     "location": "Near Huancavelica City",
     "altitude_m": 3900,
     "best_season": "May – September",
-    "image": "images/attractions/uchkus-inka.webp",
+    "image": "images/attractions/uchkus-inka.jpg",
     "description": "A walking route along an ancient Inca road segment with impressive stonework and panoramic views of the surrounding valleys.",
     "tips": "Wear hiking shoes and take water; altitude can make the walk feel harder."
   },
@@ -83,7 +83,7 @@
     "location": "Huaytará area (regional connection)",
     "altitude_m": 600,
     "best_season": "All year",
-    "image": "images/attractions/tambo-colorado.webp",
+    "image": "images/attractions/tambo-colorado.jpg",
     "description": "A well-preserved Inca administrative complex known for its adobe structures and remnants of original pigments.",
     "tips": "If you travel via the coast route, it’s a strong heritage stop to include."
   },
@@ -94,7 +94,7 @@
     "location": "Angaraes Province (Lircay)",
     "altitude_m": 3278,
     "best_season": "All year",
-    "image": "images/attractions/lircay.webp",
+    "image": "images/attractions/lircay.jpg",
     "description": "A traditional Andean town center where local life, markets, and festivities reflect the cultural identity of the province.",
     "tips": "Visit on market days to see local foods and crafts."
   },
@@ -105,7 +105,7 @@
     "location": "Castrovirreyna Province",
     "altitude_m": 3950,
     "best_season": "May – September",
-    "image": "images/attractions/castrovirreyna.webp",
+    "image": "images/attractions/castrovirreyna.jpg",
     "description": "A highland town surrounded by puna landscapes, known for its local traditions, rural life, and access to lagoons.",
     "tips": "Bring cash and warm clothing; services can be limited."
   },
@@ -116,7 +116,7 @@
     "location": "Colca District, Huancavelica",
     "altitude_m": 3200,
     "best_season": "Rainy season (Dec – March) for stronger flow",
-    "image": "images/attractions/cascada-colca.webp",
+    "image": "images/attractions/cascada-colca.jpg",
     "description": "A scenic waterfall destination that becomes more impressive during the rainy season, ideal for nature photos and short hikes.",
     "tips": "Use non-slip shoes; trails can be muddy in the rainy season."
   },
@@ -127,7 +127,7 @@
     "location": "Tayacaja Province (Pampas)",
     "altitude_m": 3270,
     "best_season": "All year",
-    "image": "images/attractions/pampas.webp",
+    "image": "images/attractions/pampas.jpg",
     "description": "A key city in Tayacaja where visitors can experience local cuisine, markets, and regional festivities.",
     "tips": "Ask locals about seasonal celebrations for a cultural highlight."
   },
@@ -138,7 +138,7 @@
     "location": "Huancavelica City",
     "altitude_m": 3676,
     "best_season": "All year",
-    "image": "images/attractions/mercado.webp",
+    "image": "images/attractions/mercado.jpg",
     "description": "A lively market where you can explore local products, Andean foods, and everyday culture in the city.",
     "tips": "Go early for the best variety and a calmer experience."
   },
@@ -149,7 +149,7 @@
     "location": "Near Huancavelica (local access)",
     "altitude_m": 4000,
     "best_season": "May – September",
-    "image": "images/attractions/sachapite.webp",
+    "image": "images/attractions/sachapite.jpg",
     "description": "A natural stone forest with striking rock formations shaped by erosion, offering dramatic views and a unique landscape.",
     "tips": "Bring sun protection; the high-altitude sun can be intense."
   },
@@ -160,7 +160,7 @@
     "location": "Huancavelica highlands (Sacsamarca area)",
     "altitude_m": 4200,
     "best_season": "May – September",
-    "image": "images/attractions/sacsamarca.webp",
+    "image": "images/attractions/sacsamarca.jpg",
     "description": "Highland viewpoints with expansive scenery—ideal for photos of the Andes, especially at sunrise or late afternoon.",
     "tips": "Start early and bring a warm jacket; winds are common."
   }
